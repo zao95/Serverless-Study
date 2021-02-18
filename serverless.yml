@@ -7,9 +7,15 @@ provider:
   runtime: nodejs12.x
 
 functions:
-  hello:
-    handler: handler.hello
+  test:
+    handler: dist/handler.invoke
     events:
       - http:
           path: /
           method: get
+
+plugins:
+  - serverless-offline
+  - serverless-cloudformation-sub-variables
+  - serverless-prune-plugin
+  - serverless-domain-manager

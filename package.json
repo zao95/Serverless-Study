@@ -5,7 +5,9 @@
   "main": "handler.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "sls deploy"
+    "deploy-prod": "sls deploy -v --stage prod",
+    "deploy-dev": "sls deploy -v --stage dev",
+    "offline": "sls offline"
   },
   "author": "awmaker",
   "license": "ISC",
@@ -17,6 +19,7 @@
     "mysql2": "^2.0.1"
   },
   "devDependencies": {
+    "esnext": "^3.3.1",
     "serverless-cloudformation-sub-variables": "^0.2.1",
     "serverless-domain-manager": "^3.3.0",
     "serverless-offline": "^6.5.0",
