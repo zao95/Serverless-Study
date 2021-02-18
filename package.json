@@ -1,0 +1,26 @@
+{
+  "name": "serverless-study",
+  "version": "1.0.0",
+  "description": "<!-- title: 'AWS Simple HTTP Endpoint example in NodeJS' description: 'This template demonstrates how to make a simple REST API with Node.js running on AWS Lambda and API Gateway using the traditional Serverless Framework.' layout: Doc framework: v1 platform: AWS language: nodeJS authorLink: 'https://github.com/serverless' authorName: 'Serverless, inc.' authorAvatar: 'https://avatars1.githubusercontent.com/u/13742415?s=200&v=4' -->",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "sls deploy"
+  },
+  "author": "awmaker",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.0.27",
+    "aws-sdk": "^2.738.0",
+    "axios": "^0.21.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.0.1"
+  },
+  "devDependencies": {
+    "serverless-cloudformation-sub-variables": "^0.2.1",
+    "serverless-domain-manager": "^3.3.0",
+    "serverless-offline": "^6.5.0",
+    "serverless-prune-plugin": "^1.4.1",
+    "typescript": "^4.1.5"
+  }
+}
