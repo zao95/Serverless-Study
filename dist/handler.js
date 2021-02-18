@@ -1,9 +1,4 @@
 "use strict";
-// interface responseType {
-//     statusCode: number, 
-//     headers: { "Access-Control-Allow-Origin" : string },
-//     body: string
-// }
 module.exports.invoke = async (event) => {
     console.log("Banana");
     return {
@@ -11,6 +6,6 @@ module.exports.invoke = async (event) => {
         body: JSON.stringify({
             message: 'Go Serverless v1.0! Your function executed successfully!',
             input: event,
-        }, null, 2),
+        }),
     };
 };

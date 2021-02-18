@@ -16,11 +16,12 @@ interface handlerEventType {
         resourcePath: string,
     },
 }
-// interface responseType {
-//     statusCode: number, 
-//     headers: { "Access-Control-Allow-Origin" : string },
-//     body: string
-// }
+interface responseType {
+    statusCode: number,
+    headers?: { "Access-Control-Allow-Origin" : string },
+    body: string
+}
+
 module.exports.invoke = async (event: handlerEventType) => {
     console.log("Banana")
     return {
@@ -30,8 +31,6 @@ module.exports.invoke = async (event: handlerEventType) => {
                 message: 'Go Serverless v1.0! Your function executed successfully!',
                 input: event,
             },
-            null,
-            2
         ),
     }
 }
