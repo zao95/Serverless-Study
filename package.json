@@ -19,6 +19,9 @@
     "mysql2": "^2.0.1"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
+    "eslint": "^7.20.0",
     "esnext": "^3.3.1",
     "serverless-cloudformation-sub-variables": "^0.2.1",
     "serverless-domain-manager": "^3.3.0",

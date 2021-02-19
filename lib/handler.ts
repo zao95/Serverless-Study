@@ -16,14 +16,14 @@ interface handlerEventType {
         resourcePath: string,
     },
 }
-interface responseType {
-    statusCode: number,
-    headers?: { "Access-Control-Allow-Origin" : string },
-    body: string
-}
+// interface responseType {
+//     statusCode: number,
+//     headers?: { 'Access-Control-Allow-Origin' : string },
+//     body: string
+// }
 
 module.exports.invoke = async (event: handlerEventType) => {
-    console.log("Banana")
+    console.log('Banana')
     return {
         statusCode: 200,
         body: JSON.stringify(
