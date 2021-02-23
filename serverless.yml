@@ -5,6 +5,7 @@ service: serverless-study
 provider:
   name: aws
   runtime: nodejs12.x
+  stage: ${opt:stage,'dev'}
   region: ap-northeast-1
 
 functions:
@@ -14,15 +15,19 @@ functions:
       - http:
           path: /
           method: get
-  apple:
+  users:
     handler: dist/handler.invoke
     events:
       - http:
-          path: /apple
+          path: /users
           method: post
 
 plugins:
   - serverless-offline
   - serverless-cloudformation-sub-variables
   - serverless-prune-plugin
-  - serverless-domain-manager
+
+custom:
+  prune:
+    automatic: true
+    number: 3

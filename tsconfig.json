@@ -6,7 +6,7 @@
         /* 기본 옵션 */
         // "incremental": true,                     /* 증분 컴파일 설정 여부 */
         "target": "ESNEXT",                         /* 사용할 특정 ECMAScript 버전 설정: 'ES3' (기본), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', 혹은 'ESNEXT'. */
-        "module": "ESNext",                         /* 모듈을 위한 코드 생성 설정: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
+        "module": "commonjs",                         /* 모듈을 위한 코드 생성 설정: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
         "lib": ["esnext"],                          /* 컴파일에 포함될 라이브러리 파일 목록 */
         "allowJs": true,                            /* 자바스크립트 파일 컴파일 허용 여부 */
         // "checkJs": true,                         /* .js 파일의 오류 검사 여부 */
